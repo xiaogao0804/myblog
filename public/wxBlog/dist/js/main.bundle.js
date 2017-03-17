@@ -815,58 +815,25 @@ for (let i=0;i<navLi.length;i++){
         }
     }
 }
-//clock
-function clock(){
-    let clock=document.getElementById('clock');
-    let sec=document.getElementById('sec');
-    let hour=document.getElementById('hour');
-    let min=document.getElementById('min');
-    setInterval(function(){
-        let seconds=new Date().getSeconds();
-        let sdeg=seconds*6;
-        let srotate=`rotate(${sdeg}deg)`;
-        sec.style.transform=srotate;
-    },1000);
-    setInterval(function(){
-        let hours=new Date().getHours();
-        let mins=new Date().getMinutes();
-        let hdeg=hours*30+(mins/2);
-        let hrotate=`rotate(${hdeg}deg)`;
-        hour.style.transform=hrotate;
-    },1000);
-    setInterval(function(){
-        let mins=new Date().getMinutes();
-        let mdeg=mins*6;
-        let mrotate=`rotate(${mdeg}deg)`;
-        min.style.transform=mrotate;
-    },1000);
-}
-clock();
 
-navLi[0].onclick=function(){
-    window.location.href='../../../../myBlog/dist/index.html';
+function href(i,url){
+    navLi[i].onclick=function(){
+        window.location.href=url;
+        for(var j=0;j<navLi.length;j++){
+            navLi[j].style.class='';
+        }
+        navLi[i].style.class='active';
+    }
 }
-navLi[1].onclick=function(){
-    window.location.href='../../../../jsBlog/dist/js1.html';
-}
-navLi[2].onclick=function(){
-    window.location.href='../../../../jqBlog/dist/jq1.html';
-}
-navLi[3].onclick=function(){
-    window.location.href='../../../../vueBlog/dist/vue.html';
-}
-navLi[4].onclick=function(){
-    window.location.href='../../../../webBlog/dist/web.html';
-}
-navLi[5].onclick=function(){
-    window.location.href='../../../../esBlog/dist/es.html';
-}
-navLi[6].onclick=function(){
-    window.location.href='../../../../nodeBlog/dist/node.html';
-}
-navLi[7].onclick=function(){
-    window.location.href='../../../../wxBlog/dist/wx.html';
-}
+
+href(0,'../../../../myBlog/dist/index.html');
+href(1,'../../../../jsBlog/dist/js1.html');
+href(2,'../../../../jqBlog/dist/jq1.html');
+href(3,'../../../../vueBlog/dist/vue.html');
+href(4,'../../../../webBlog/dist/web.html');
+href(5,'../../../../esBlog/dist/es.html');
+href(6,'../../../../nodeBlog/dist/node.html');
+href(7,'../../../../wxBlog/dist/wx.html');
 
 /***/ })
 /******/ ]);
