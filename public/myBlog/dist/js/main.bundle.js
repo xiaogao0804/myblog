@@ -1043,17 +1043,52 @@ function Move(){
     },20)
 }
 
-navLi[0].onclick=function(){
+function href(i,url){
+    navLi[i].onclick=function(){
+        window.location.href=url;
+        for(var j=0;j<navLi.length;j++){
+            navLi[j].style.class='';
+        }
+        navLi[i].style.class='active';
+    }
+}
+
+href(0,'../../../../myBlog/dist/index.html');
+href(1,'../../../../jsBlog/dist/js1.html');
+href(2,'../../../../jqBlog/dist/jq1.html');
+href(3,'../../../../vueBlog/dist/vue.html');
+href(4,'../../../../webBlog/dist/web.html');
+href(5,'../../../../esBlog/dist/es.html');
+href(6,'../../../../nodeBlog/dist/node.html');
+href(7,'../../../../wxBlog/dist/wx.html');
+
+/*navLi[0].onclick=function(){
     window.location.href='../../../../myBlog/dist/index.html';
+    for(var j=0;j<navLi.length;j++){
+        navLi[j].style.class='';
+    }
+    navLi[0].style.class='active';
 }
 navLi[1].onclick=function(){
     window.location.href='../../../../jsBlog/dist/js1.html';
+    for(var j=0;j<navLi.length;j++){
+        navLi[i].style.class='';
+    }
+    navLi[1].style.class='active';
 }
 navLi[2].onclick=function(){
     window.location.href='../../../../jqBlog/dist/jq1.html';
+    for(var j=0;j<navLi.length;j++){
+        navLi[i].style.class='';
+    }
+    navLi[2].style.class='active';
 }
 navLi[3].onclick=function(){
     window.location.href='../../../../vueBlog/dist/vue.html';
+    for(var j=0;j<navLi.length;j++){
+        navLi[i].style.class='';
+    }
+    navLi[0].style.class='active';
 }
 navLi[4].onclick=function(){
     window.location.href='../../../../webBlog/dist/web.html';
@@ -1067,7 +1102,7 @@ navLi[6].onclick=function(){
 navLi[7].onclick=function(){
     window.location.href='../../../../wxBlog/dist/wx.html';
 }
-
+*/
 //侧栏
 /*
 function scroll(){
