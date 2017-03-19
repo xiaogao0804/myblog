@@ -16,13 +16,15 @@
 </div>
 <script type="text/javascript" src="js/main.bundle.js"></script></body>
 <script>
+	get_leave_word()
 	function get_leave_word(){
 		$.ajax({
 			url:'/get_leave_word/',
 			data:{},
 			type:"POST",
-			success:function(res){
+			success:function(res){				
 				if(res.code == 800){
+					add_leave_word()
 					var strarr = [];
 					for(var i in res.data){
 						strarr.push(`<li><h3>${res.data[i].name}</h3><p>${res.data[i].content}</p><p>${res.data[i].time}</p></li>`)
@@ -32,20 +34,23 @@
 			}
 		})
 	}
-	get_leave_word()
-	$(document).on('click','#btn',function(){
-		var data = {content:$('#msg_con').val(),name:$('#msg_name').val()}
-		$.ajax({
-			url:'/add_leave_word/',
-			data,
-			type:"POST",
-			success:function(res){
-				if(res.code == 800){
-					get_leave_word()
-				}				
-			}
+
+	function add_leave_word(){
+		$(document).on('click','#btn',function(){
+			var data = {content:$('#msg_con').val(),name:$('#msg_name').val()}
+			$.ajax({
+				url:'/add_leave_word/',
+				data,
+				type:"POST",
+				success:function(res){
+					if(res.code == 800){
+						get_leave_word()
+					}				
+				}
+			})
 		})
-	})
+	}
+	
 	
 </script>
 </html>
