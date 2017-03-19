@@ -51,6 +51,6 @@ app.post('/add_leave_word/*',function(req,res){
 		}
 	})	
 }) 
-var server=app.listen(80,'10.135.136.31',function(){
+var server=app.listen(80,'103.212.32.209',function(){
 })
 
