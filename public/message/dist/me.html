@@ -52,8 +52,18 @@
 		})
 	}
 	get_leave_word()
+	var data = {};
+	$('#msg_con').on('blur',function(){
+		data.content = $('#msg_con').val();
+	});
+	$('#msg_name').on('blur',function(){
+		data.name = $('#msg_name').val();
+	})
 	$(document).on('click','#btn',function(){
-		var data = {content:$('#msg_con').val(),name:$('#msg_name').val()}
+		if(data.name == "" || data.content == ""){
+			alert('请输入内容');
+			return false;
+		}
 		$.ajax({
 			url:'/add_leave_word/',
 			data,
