@@ -41,8 +41,6 @@
 			success:function(res){
 				if(res.code == 800){
 					var strarr = [];
-					var current='';
-					var timer=new date();
 					for(var i in res.data){
 						strarr.push(`<li><h3>${res.data[i].name}</h3><p>${res.data[i].content}</p><p style="background-color: #fff;margin-top: -11px;text-indent: 24em;">${current}</p></li>`)
 					}
