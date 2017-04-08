@@ -17,21 +17,33 @@
 <script type="text/javascript" src="js/main.bundle.js"></script></body>
 <script>
     function getNowDate(){
-    	var date=new Date();
-    	var seperator1="-";
-    	var seperator2=":";
-    	var month=date.getMonth()+1;
-    	var strDate=date.getDate();
-    	if(month>=1&&month<=9){
-    		month="0"+month;
-    	};
-    	if(strDate>=0&&strDate<=9){
-    		strDate="0"+strDate;
-    	}
-    	var currentDate=date.getFullYear()+seperator1+month+seperator1+strDate+" "+date.getHours()+seperator2+date.getMinutes()+seperator2+date.getSeconds();
-    	return currentDate;
+        var date=new Date();
+        var seperator1="-";
+        var seperator2=":";
+        var month=date.getMonth()+1;
+        var strDate=date.getDate();
+        var strHour=date.getHours();
+        var strMin=date.getMinutes();
+        var strSec=date.getSeconds();
+        if(month>=1&&month<=9){
+            month="0"+month;
+        };
+        if(strDate>=0&&strDate<=9){
+            strDate="0"+strDate;
+        }
+        if(strHour>=0&&strHour<=9){
+            strHour="0"+strHour;
+        }
+        if(strMin>=0&&strMin<=9){
+            strMin="0"+strMin;
     }
-    var current=getNowDate();
+        if(strSec>=0&&strSec<=9){
+            strSec="0"+strSec;
+        }
+        var currentDate=date.getFullYear()+seperator1+month+seperator1+strDate+" "+strHour+seperator2+strMin+seperator2+strSec;
+        return currentDate;
+    }
+   var current=getNowDate();
   
 	function get_leave_word(){
 		$.ajax({
@@ -42,7 +54,7 @@
 				if(res.code == 800){
 					var strarr = [];
 					for(var i in res.data){
-						strarr.push(`<li><h3>${res.data[i].name}</h3><p>${res.data[i].content}</p><p style="background-color: #fff;margin-top: -11px;text-indent: 24em;">${current}</p></li>`)
+						strarr.push(`<li><h3>${res.data[i].name}</h3><p>${res.data[i].content}</p><p style="background-color: #fff;margin-top: -11px;text-indent: 26em;">${current}</p></li>`)
 					}
 					$('#list').html(strarr.join(""));
 				}				
@@ -50,18 +62,8 @@
 		})
 	}
 	get_leave_word()
-	var data = {};
-	$('#msg_con').on('blur',function(){
-		data.content = $('#msg_con').val();
-	});
-	$('#msg_name').on('blur',function(){
-		data.name = $('#msg_name').val();
-	})
 	$(document).on('click','#btn',function(){
-		if(data.name == "" || data.content == ""){
-			alert('请输入内容');
-			return false;
-		}
+		var data = {content:$('#msg_con').val(),name:$('#msg_name').val()}
 		$.ajax({
 			url:'/add_leave_word/',
 			data,
