@@ -1,0 +1,56 @@
+html,body{
+    padding:0;
+    margin:0;
+    width:100%;
+    background-color: #EFEFEF;
+}
+ul,li{
+    padding:0;
+    margin:0;
+    list-style: none;
+}
+#app{
+    min-width:1300px;
+}
+#contain{
+    width:76%;
+    margin:0 auto;
+}
+#js{
+    width:76%;
+    margin:0 auto;
+}
+#header{
+    width:100%;
+    margin:0 auto;
+}
+#js_header{
+    width:100%;
+    margin:0 auto;
+}
+#banner{
+    width:100%;
+    margin:20px auto 0;
+}
+#sidebar{
+    width:40px;
+    height:125px;
+    position: fixed;
+    bottom:120px;
+    right:50px;
+}
+#recommend{
+    width:100%;
+    margin: 25px auto;
+}
+#footer{
+    width:100%;
+    margin: 20px auto;
+}
+.clearFix:after{
+    content:'';
+    display:block;
+    height:0;
+    visibility: hidden;
+    clear: both;
+}

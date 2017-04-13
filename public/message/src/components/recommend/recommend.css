@@ -1,0 +1,358 @@
+.recommend {
+  width: 100%;
+  border: 1px solid #EFEFEF;
+}
+.recommend .recommend_tit {
+  height: 25px;
+  margin-bottom: 2px;
+}
+.recommend .recommend_tit .line {
+  width: 91%;
+  height: 15px;
+  background: url("../../asset/line.jpg") repeat-x;
+  float: left;
+  margin: 9px 0 0 20px;
+}
+.recommend .recommend_tit .recommend_title {
+  font: 18px "微软雅黑", Arial, Helvetica, sans-serif;
+  font-weight: bolder;
+  float: left;
+}
+.recommend .recommend_tit .recommend_title span {
+  color: #C6391C;
+}
+.recommend .recommend_con {
+  width: 100%;
+}
+.recommend .recommend_con .recommend_left {
+  width: 69%;
+  height: 1290px;
+  float: left;
+}
+.recommend .recommend_con .recommend_left .recommend_left_con {
+  width: 93%;
+  height: 1290px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px #625C5A;
+  margin: 26px auto;
+  border: 1px solid #fff;
+}
+.recommend .recommend_con .recommend_left .recommend_left_con .location {
+  height: 35px;
+  line-height: 35px;
+  font: 13px "微软雅黑", Arial, Helvetica, sans-serif;
+  color: #6F706D;
+  border-bottom: 1px dashed #979995;
+}
+.recommend .recommend_con .recommend_left .recommend_left_con .location img {
+  margin-left: 20px;
+  float: left;
+}
+.recommend .recommend_con .recommend_left .recommend_left_con .location i {
+  float: left;
+}
+.recommend .recommend_con .recommend_left .recommend_left_con .location span {
+  display: inline-block;
+  float: left;
+}
+.recommend .recommend_con .recommend_left .recommend_left_con .article_name {
+  width: auto;
+  text-align: center;
+  margin: 20px auto 10px;
+  font: 22px "微软雅黑", Arial, Helvetica, sans-serif;
+}
+.recommend .recommend_con .recommend_left .recommend_left_con .user_name {
+  width: auto;
+  text-align: center;
+  margin: 0 auto;
+  font: 13px "微软雅黑", Arial, Helvetica, sans-serif;
+  color: #969993;
+}
+.recommend .recommend_con .recommend_left .recommend_left_con .article_con {
+  width: 600px;
+  height: 1100px;
+  /* border:1px solid #C6C8C3;*/
+  margin: 20px auto;
+  font: 13px "微软雅黑", Arial, Helvetica, sans-serif;
+}
+.recommend .recommend_con .recommend_left .recommend_left_con .article_con #box {
+  width: 480px;
+  padding: 10px;
+  margin: 10px auto;
+}
+.recommend .recommend_con .recommend_left .recommend_left_con .article_con #box div {
+  margin-bottom: 10px;
+}
+.recommend .recommend_con .recommend_left .recommend_left_con .article_con #box div span {
+  font-size: 16px;
+}
+.recommend .recommend_con .recommend_left .recommend_left_con .article_con #box div #msg_name {
+  width: 424px;
+  height: 30px;
+  padding: 0 5px;
+  border-radius: 5px;
+}
+.recommend .recommend_con .recommend_left .recommend_left_con .article_con #box div #msg_con {
+  width: 420px;
+  height: 90px;
+  padding: 4px;
+  border-radius: 5px;
+}
+.recommend .recommend_con .recommend_left .recommend_left_con .article_con #box div #msg_txt {
+  text-align: right;
+  color: #720801;
+  font-weight: bold;
+  font-size: 16px;
+}
+.recommend .recommend_con .recommend_left .recommend_left_con .article_con #box div #btn {
+  padding: 2px 8px;
+  font-size: 16px;
+  border-radius: 5px;
+}
+.recommend .recommend_con .recommend_left .recommend_left_con .article_con #box div h2 {
+  width: 100%;
+  height: 30px;
+  margin-top: 40px;
+  border-radius: 5px;
+}
+.recommend .recommend_con .recommend_left .recommend_left_con .article_con #box #list li {
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+.recommend .recommend_con .recommend_left .recommend_left_con .article_con #box #list li h3 {
+  background-color: #fff;
+  padding: 4px 4px;
+}
+.recommend .recommend_con .recommend_left .recommend_left_con .article_con #box #list li h3 a {
+  float: right;
+  font-size: 16px;
+  color: red;
+}
+.recommend .recommend_con .recommend_left .recommend_left_con .article_con #box #list p {
+  background-color: #d7d7d7;
+  padding: 6px 4px;
+  text-indent: 2em;
+  border-radius: 5px;
+}
+.recommend .recommend_con .r_line {
+  width: 15px;
+  height: 1395px;
+  background: url("../../asset/r_line.jpg") repeat-y;
+  float: left;
+}
+.recommend .recommend_con .recommend_right {
+  width: 29%;
+  float: left;
+}
+.recommend .recommend_con .recommend_right .search {
+  width: 285px;
+  height: 80px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px #625C5A;
+  margin: 26px 9px;
+}
+.recommend .recommend_con .recommend_right .search input {
+  width: 172px;
+  border-radius: 5px;
+  font: 13px "微软雅黑", Arial, Helvetica, sans-serif;
+  padding: 7px 7px;
+  margin: 22px 45px;
+  outline-style: hidden;
+}
+.recommend .recommend_con .recommend_right .message {
+  width: 285px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px #625C5A;
+  margin: 26px 9px;
+  border: 1px solid #fff;
+}
+.recommend .recommend_con .recommend_right .message .message_con {
+  width: 230px;
+  margin: 0 auto;
+}
+.recommend .recommend_con .recommend_right .message .message_con span {
+  height: 35px;
+  width: 90px;
+  border-radius: 5px;
+  font: 15px "微软雅黑", Arial, Helvetica, sans-serif;
+  display: inline-block;
+  margin: 12px 10px;
+  cursor: pointer;
+  line-height: 35px;
+  text-align: center;
+  text-shadow: 2px 2px 3px #fff;
+  transform: rotate(0deg);
+  transition: all 0.5s linear;
+}
+.recommend .recommend_con .recommend_right .message .message_con span:hover {
+  transform: rotate(360deg);
+}
+.recommend .recommend_con .recommend_right .message .message_con span a {
+  text-decoration: none;
+  color: #fff;
+}
+.recommend .recommend_con .recommend_right .message .message_con span:nth-child(1) {
+  background-color: #E7769E;
+  transition: all 0.5s linear;
+}
+.recommend .recommend_con .recommend_right .message .message_con span:nth-child(1):hover {
+  background-color: #990000;
+  text-shadow: 2px 2px 3px #fff;
+}
+.recommend .recommend_con .recommend_right .message .message_con span:nth-child(2) {
+  background-color: #FF9900;
+  transition: all 0.5s linear;
+}
+.recommend .recommend_con .recommend_right .message .message_con span:nth-child(2):hover {
+  background-color: #990000;
+  text-shadow: 2px 2px 3px #fff;
+}
+.recommend .recommend_con .recommend_right .message .message_con span:nth-child(3) {
+  background-color: #63A8E8;
+  transition: all 0.5s linear;
+}
+.recommend .recommend_con .recommend_right .message .message_con span:nth-child(3):hover {
+  background-color: #990000;
+  text-shadow: 2px 2px 3px #fff;
+}
+.recommend .recommend_con .recommend_right .message .message_con span:nth-child(4) {
+  background-color: #71A532;
+  transition: all 0.5s linear;
+}
+.recommend .recommend_con .recommend_right .message .message_con span:nth-child(4):hover {
+  background-color: #990000;
+  text-shadow: 2px 2px 3px #fff;
+}
+.recommend .recommend_con .recommend_right .person {
+  width: 285px;
+  background-color: #fff;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px #625C5A;
+  margin: 26px 9px;
+}
+.recommend .recommend_con .recommend_right .person img {
+  display: inline-block;
+  width: 97px;
+  height: 143px;
+  padding: 13px 18px;
+  float: left;
+}
+.recommend .recommend_con .recommend_right .person .person_con {
+  float: left;
+  margin-top: 11px;
+}
+.recommend .recommend_con .recommend_right .person .person_con span {
+  padding: 6px 0;
+  display: inline-block;
+  font: 13px "微软雅黑", Arial, Helvetica, sans-serif;
+  color: #5A5251;
+}
+.recommend .recommend_con .recommend_right .new_article {
+  width: 285px;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px 0;
+  box-shadow: 5px 5px 15px #625C5A;
+  margin: 26px 9px;
+}
+.recommend .recommend_con .recommend_right .new_article .new_title {
+  font: 15px "微软雅黑", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  padding-left: 15px;
+}
+.recommend .recommend_con .recommend_right .new_article .new_title span {
+  color: #1DD139;
+}
+.recommend .recommend_con .recommend_right .new_article ul {
+  width: 85%;
+  margin: 15px auto;
+}
+.recommend .recommend_con .recommend_right .new_article ul li {
+  height: 42px;
+  line-height: 42px;
+  border-bottom: 1px dashed #CCCCCC;
+}
+.recommend .recommend_con .recommend_right .new_article ul li a {
+  display: block;
+  text-decoration: none;
+  color: #625C5A;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font: 15px "微软雅黑", Arial, Helvetica, sans-serif;
+  line-height: 42px;
+}
+.recommend .recommend_con .recommend_right .new_article ul li a:hover {
+  color: #2B60E1;
+}
+.recommend .recommend_con .recommend_right .hot_article {
+  width: 285px;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px 0;
+  box-shadow: 5px 5px 15px #625C5A;
+  margin: 26px 9px;
+}
+.recommend .recommend_con .recommend_right .hot_article .hot_title {
+  font: 15px "微软雅黑", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  padding-left: 15px;
+}
+.recommend .recommend_con .recommend_right .hot_article .hot_title span {
+  color: #1DD139;
+}
+.recommend .recommend_con .recommend_right .hot_article ul {
+  width: 85%;
+  margin: 15px auto;
+}
+.recommend .recommend_con .recommend_right .hot_article ul li {
+  height: 42px;
+  line-height: 42px;
+  border-bottom: 1px dashed #CCCCCC;
+}
+.recommend .recommend_con .recommend_right .hot_article ul li a {
+  display: block;
+  text-decoration: none;
+  color: #625C5A;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  font: 15px "微软雅黑", Arial, Helvetica, sans-serif;
+  line-height: 42px;
+}
+.recommend .recommend_con .recommend_right .hot_article ul li a:hover {
+  color: #2B60E1;
+}
+.recommend .recommend_con .recommend_right .weChat {
+  width: 285px;
+  background-color: #fff;
+  border-radius: 5px;
+  padding: 10px 0;
+  box-shadow: 5px 5px 15px #625C5A;
+  margin: 26px 9px;
+}
+.recommend .recommend_con .recommend_right .weChat .weChat_title {
+  font: 15px "微软雅黑", Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  padding-left: 15px;
+}
+.recommend .recommend_con .recommend_right .weChat .weChat_title span {
+  color: #1DD139;
+}
+.recommend .recommend_con .recommend_right .weChat p {
+  width: 211px;
+  margin: 10px auto;
+  font: 15px "微软雅黑", Arial, Helvetica, sans-serif;
+}
+.recommend .recommend_con .recommend_right .weChat p span {
+  color: #1DD139;
+}
+.recommend .recommend_con .recommend_right .weChat img {
+  width: 200px;
+  height: 200px;
+  margin: 0 43px;
+  cursor: pointer;
+}
