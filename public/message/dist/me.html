@@ -14,6 +14,7 @@
     <div id="sidebar"></div>
 </div>
 <script type="text/javascript" src="js/main.bundle.js"></script>
+<script type="text/javascript" src="js/jquery.min.js"></script>
 
 </body>
 <script>
@@ -62,9 +63,15 @@
             }
         })
     }
-    get_leave_word()
+    get_leave_word();
+    var data = {}
+    $('#msg_con').on('change',function(){
+    	data.content = $('#msg_con').val()
+    });
+    $('#msg_name').on('change',function(){
+    	data.name = $('#msg_name').val()
+    });
     $(document).on('click','#btn',function(){
-        var data = {content:$('#msg_con').val(),name:$('#msg_name').val()}
         $.ajax({
             url:'/add_leave_word/',
             data,
