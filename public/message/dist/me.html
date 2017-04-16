@@ -65,13 +65,11 @@
     }
     get_leave_word();
     var data = {}
-    $('#msg_con').on('change',function(){
-    	data.content = $('#msg_con').html()
-    });
     $('#msg_name').on('change',function(){
     	data.name = $('#msg_name').val()
     });
     $(document).on('click','#btn',function(){
+    	data.content = $('#msg_con').html();
         $.ajax({
             url:'/add_leave_word/',
             data,
