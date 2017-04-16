@@ -65,6 +65,10 @@
     }
     get_leave_word();
     var data = {}
+    $('#msg_con').on('keyup',function(){
+    	console.log(123)
+    	data.content = $('#msg_con').html()
+    });
     $('#msg_name').on('change',function(){
     	data.name = $('#msg_name').val()
     });
